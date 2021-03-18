@@ -17,8 +17,8 @@ const Header = () => {
   <Navbar.Collapse id="basic-navbar-nav">
       {/* ml-auto is margin left. moves sigin and prep cart links to the right side of page */}
     <Nav className="ml-auto">
-      <Nav.Link href="/login">SignIn</Nav.Link>
-      <Nav.Link href="/cart">Prep Cart</Nav.Link>
+      <Nav.Link href="/login"> <i className=" fas fa-shopping-cart"> </i> SignIn</Nav.Link>
+      <Nav.Link href="/cart"> <i className=" fas fa-user"> </i>Prep Cart</Nav.Link>
       
     </Nav>
     
