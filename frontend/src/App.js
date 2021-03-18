@@ -11,7 +11,6 @@ const App =() => {
        <Container>
        <h1>Esther Prep</h1>
        </Container>
-    
      </main>
      
      <Footer/>
