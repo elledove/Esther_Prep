@@ -1,4 +1,5 @@
 import React from 'react';
+import {Container} from 'react-bootstrap';
 
 
 const Header = () => {
@@ -6,7 +7,8 @@ const Header = () => {
 
 
     <header>
-    <h4> The header</h4>
+
+     The header
     </header> 
 
     );
