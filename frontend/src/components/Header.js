@@ -10,16 +10,20 @@ const Header = () => {
     <header>
 {/* bg dark gives the dark bg and variant makes it so the words are still visible. */}
 <Navbar bg="dark" variant='dark' expand="lg" collapseOnSelect>
+    {/* The container tags centers whatever is inside of it. */}
+    <Container>
   <Navbar.Brand href="/">Esther Prep</Navbar.Brand>
   <Navbar.Toggle aria-controls="basic-navbar-nav" />
   <Navbar.Collapse id="basic-navbar-nav">
-    <Nav className="mr-auto">
+      {/* ml-auto is margin left. moves sigin and prep cart links to the right side of page */}
+    <Nav className="ml-auto">
       <Nav.Link href="/login">SignIn</Nav.Link>
       <Nav.Link href="/cart">Prep Cart</Nav.Link>
       
     </Nav>
     
   </Navbar.Collapse>
+  </Container>
 </Navbar>
     </header> 
 
