@@ -1,6 +1,7 @@
 import Header from './components/Header';
 import Footer from './components/Footer';
 import {Container} from 'react-bootstrap';
+import HomeScreen from './screens/HomeScreen';
 
 const App =() => {
   return (
@@ -13,7 +14,7 @@ const App =() => {
        <h1>Welcome To Esther Prep</h1>
        </Container>
      </main>
-     
+     <HomeScreen/>
      <Footer/>
     </>
   );
