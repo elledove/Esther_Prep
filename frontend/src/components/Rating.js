@@ -1,10 +1,12 @@
 import React from 'react'
-
-const Rating = ({value,text}) => {
+// The purpose this component is to determine the rating of a product and return the rating in a star icon form.
+//The ternary operator will show a full star, a half star or an empty star
+//if the rating is greater than a number from the value prop or not.
+const Rating = ({value,text,color}) => {
     return (
         <div className= 'rating'>
             <span>
-              <i 
+              <i style ={{color}}
               className={
                   value >= 1 
                   ? 'fas fa-star' 
@@ -17,7 +19,7 @@ const Rating = ({value,text}) => {
 
 
             <span>
-              <i 
+              <i style ={{color}}
               className={
                   value >= 2 
                   ? 'fas fa-star' 
@@ -30,7 +32,7 @@ const Rating = ({value,text}) => {
 
 
             <span>
-              <i 
+              <i style ={{color}}
               className={
                   value >= 3 
                   ? 'fas fa-star' 
@@ -43,7 +45,7 @@ const Rating = ({value,text}) => {
 
 
             <span>
-              <i 
+              <i style ={{color}}
               className={
                   value >= 4 
                   ? 'fas fa-star' 
@@ -56,7 +58,7 @@ const Rating = ({value,text}) => {
 
 
             <span>
-              <i 
+              <i style ={{color}}
               className={
                   value >= 5 
                   ? 'fas fa-star' 
@@ -65,9 +67,14 @@ const Rating = ({value,text}) => {
                   : 'far fa-star'}
                   ></i>
             </span>
+            {' '}
+            <span>{text ? text : " "}</span>
             
         </div>
     )
 }
-
+//Created a default props to color the star icons. Originally they were black.
+Rating.defaultProps = {
+    color : "#eb3498 "
+};
 export default Rating;
