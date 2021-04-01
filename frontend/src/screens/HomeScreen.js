@@ -9,7 +9,7 @@ import Product from '../components/Product';
         <h1> Check out the latest in prep!</h1>
             <Row>
                 {products.map(product=> (
-                    <Col sm={12} md={6} lg={4} xl={3}>
+                    <Col sm={12} md={6} lg={4} xl={3} key ={product._id} >
                     
                     {/* <h3>{product.name}</h3> */}
                     <Product product={product}/>
