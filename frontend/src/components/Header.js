@@ -1,5 +1,6 @@
 import React from 'react';
 import {Container,Navbar,Nav} from 'react-bootstrap';
+import {LinkContainer} from 'react-router-bootstrap';
 
 
 
@@ -12,13 +13,22 @@ const Header = () => {
 <Navbar bg="dark" variant='dark' expand="lg" collapseOnSelect>
     {/* The container tags centers whatever is inside of it. */}
     <Container>
-  <Navbar.Brand href="/">Esther Prep</Navbar.Brand>
+      <LinkContainer to='/'>
+      <Navbar.Brand>Esther Prep</Navbar.Brand>
+      </LinkContainer>
+  
   <Navbar.Toggle aria-controls="basic-navbar-nav" />
   <Navbar.Collapse id="basic-navbar-nav">
       {/* ml-auto is margin left. moves sigin and prep cart links to the right side of page */}
     <Nav className="ml-auto">
-      <Nav.Link href="/login"> <i className=" fas fa-shopping-cart"> </i> SignIn</Nav.Link>
-      <Nav.Link href="/cart"> <i className=" fas fa-user"> </i>Prep Cart</Nav.Link>
+
+      <LinkContainer to='/login'>
+      <Nav.Link> <i className=" fas fa-shopping-cart"> </i> SignIn</Nav.Link>
+      </LinkContainer>
+
+      <LinkContainer to='/cart'>
+      <Nav.Link> <i className=" fas fa-user"> </i>Prep Cart</Nav.Link>
+      </LinkContainer>
       
     </Nav>
     
