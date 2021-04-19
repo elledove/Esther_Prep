@@ -4,11 +4,17 @@ import {Row,Col,LisGroup,Card,Button} from 'react-bootstrap';
 import Rating from '../components/Rating';
 import products from '../products';
 
-function ProductScreen() {
+function ProductScreen({match}) {
+
+const producx = products.find((oneProduct) => oneProduct._id === match.params.id)
+
+
     return (
-        <div>
+        <>
             <h1>This is for the products dude!</h1>
-        </div>
+            <h3>{producx.name}</h3>
+            <Link className='btn btn-dark' to='/'>Take me back! </Link>
+        </>
     )
 }
 
