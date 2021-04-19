@@ -1,6 +1,6 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
-import {Row,Col,LisGroup,Card,Button,Image} from 'react-bootstrap';
+import {Row,Col,ListGroup,Card,Button,Image} from 'react-bootstrap';
 import Rating from '../components/Rating';
 import products from '../products';
 
@@ -17,9 +17,25 @@ const producx = products.find((oneProduct) => oneProduct._id === match.params.id
 
             <Row>
             <Col md={6}>
-            <Image src={producx.image} alt={producx.name}/>  
+                {/* Fluid keeps the image inside of the container.matches the width of container */}
+            <Image src={producx.image} alt={producx.name} fluid/>  
             </Col>
+
+            
             <Col md={3}>
+
+                <ListGroup >
+                <ListGroup.Item>
+                    <h2>{producx.name}</h2>
+                </ListGroup.Item>
+                <ListGroup.Item>
+                    <Rating value={producx.rating} text={`${producx.numReviews} reviews`}/>
+                </ListGroup.Item>
+
+                <ListGroup.Item>
+                    <h4>{producx.price}</h4>
+                </ListGroup.Item>
+              </ListGroup>
             
             </Col>
 
