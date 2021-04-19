@@ -17,7 +17,7 @@ const App =() => {
        <Container>
        {/* <h1>Welcome To Esther Prep</h1> */}
        <Route path='/' exact component={HomeScreen}/>
-       <Route path='/products/:id' component={ProductScreen}/>
+       <Route path='/product/:id' component={ProductScreen}/>
        </Container>
      </main>
      
