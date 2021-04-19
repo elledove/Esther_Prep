@@ -47,7 +47,7 @@ const producx = products.find((oneProduct) => oneProduct._id === match.params.id
 
             <Col md={3}>
                 <Card>
-                <ListGroup variant=''>
+                <ListGroup variant='flush'>
                 <ListGroup.Item>
                     <Row>
 
@@ -56,6 +56,23 @@ const producx = products.find((oneProduct) => oneProduct._id === match.params.id
                         
                         </Col>
                     </Row>
+                </ListGroup.Item>
+
+
+                <ListGroup.Item>
+                    <Row>
+                        <Col>Status:</Col>
+                        <Col>
+                         {producx.countInStock > 0 ? 'We got it' :'Sorry, we sold out :('}
+                        
+                        </Col>
+                    </Row>
+                </ListGroup.Item>
+
+                <ListGroup.Item>
+                    <Button className='btn-block' type='button'>
+                        Add To My Cart
+                    </Button>
                 </ListGroup.Item>
                     
                 </ListGroup>
