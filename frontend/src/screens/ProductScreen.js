@@ -24,7 +24,7 @@ const producx = products.find((oneProduct) => oneProduct._id === match.params.id
             
             <Col md={3}>
 
-                <ListGroup >
+                <ListGroup variant='' >
                 <ListGroup.Item>
                     <h2>{producx.name}</h2>
                 </ListGroup.Item>
@@ -33,10 +33,36 @@ const producx = products.find((oneProduct) => oneProduct._id === match.params.id
                 </ListGroup.Item>
 
                 <ListGroup.Item>
-                    <h4>{producx.price}</h4>
+                    Price: ${producx.price}
                 </ListGroup.Item>
+
+                <ListGroup.Item>
+                    {producx.description}
+                </ListGroup.Item>
+
+
               </ListGroup>
             
+            </Col>
+
+            <Col md={3}>
+                <Card>
+                <ListGroup variant=''>
+                <ListGroup.Item>
+                    <Row>
+
+                        <Col>
+                        <strong> Price: $ {producx.price}</strong>
+                        
+                        </Col>
+                    </Row>
+                </ListGroup.Item>
+                    
+                </ListGroup>
+
+                </Card>
+
+
             </Col>
 
             </Row>
