@@ -70,7 +70,7 @@ const producx = products.find((oneProduct) => oneProduct._id === match.params.id
                 </ListGroup.Item>
 
                 <ListGroup.Item>
-                    <Button className='btn-block' type='button'>
+                    <Button className='btn-block' type='button' disabled={producx.countInStock === 0}>
                         Add To My Cart
                     </Button>
                 </ListGroup.Item>
