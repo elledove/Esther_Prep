@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/elledove/Esther_Prep/issues"
   },
-  "homepage": "https://github.com/elledove/Esther_Prep#readme"
+  "homepage": "https://github.com/elledove/Esther_Prep#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
