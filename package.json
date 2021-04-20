@@ -1,0 +1,19 @@
+{
+  "name": "the_mern_project",
+  "version": "1.0.0",
+  "description": "Esther prep app MERN based",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elledove/Esther_Prep.git"
+  },
+  "author": "Elle Dove",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/elledove/Esther_Prep/issues"
+  },
+  "homepage": "https://github.com/elledove/Esther_Prep#readme"
+}

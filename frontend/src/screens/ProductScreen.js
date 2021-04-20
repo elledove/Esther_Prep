@@ -24,7 +24,7 @@ const producx = products.find((oneProduct) => oneProduct._id === match.params.id
             
             <Col md={3}>
 
-                <ListGroup variant='' >
+                <ListGroup variant='flush' >
                 <ListGroup.Item>
                     <h2>{producx.name}</h2>
                 </ListGroup.Item>
